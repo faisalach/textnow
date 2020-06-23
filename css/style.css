@@ -1,0 +1,75 @@
+body{
+	overflow-x: hidden;
+}
+.tengah{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	transform: translate(-50%,-50%);
+}
+.relative{
+	position: relative;
+}
+.header{
+	background-color: white;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+.body{
+	background-color: white;
+	height: 100vh;
+	padding-top: 80px;
+}
+.contact{
+	transition: .2s;
+}
+.contact:hover,.contact.active{
+	background-color: #eaeaea;
+}
+.contactImg{
+	display: inline-block;
+	border: .1px solid #ababab;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	margin-right: 20px;
+}
+.clear{
+	clear: both;
+}
+.overflow-y-scroll{
+	overflow-y: scroll;
+}
+.boxContact{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.room-chat{
+	position: fixed;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+}
+.room-chat .comment{
+	position: fixed;
+	width: 75%;
+	bottom: 0;
+	margin-bottom: 10px;
+
+
+}
+.room-chat .chat{
+	max-width: 80%;
+}
+.form-control{
+	border: 0 !important;
+}
