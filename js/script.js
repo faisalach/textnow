@@ -1,5 +1,6 @@
 $(function() {
 	$('.newContact').addClass('d-none');
+	$('.contact')[0].classList.add('active');
 	$('.addNewContact').on('click',function(e) {
 		e.preventDefault();
 		$('.contact').removeClass('active');
