@@ -73,3 +73,45 @@ body{
 .form-control{
 	border: 0 !important;
 }
+
+#number-list{
+	background-color: white;
+	border: 1px solid #eaeaea;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+}
+#number-list ul{
+	margin: 0;
+	padding: 0;
+}
+#number-list ul li{
+	list-style: none;
+	padding: 10px;
+}
+#number-list ul li:hover{
+	text-decoration: none;
+	background-color: #eaeaea;
+}
+
+#number-selected{
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+#number-selected .ballon{
+	display: block;
+	background-color: #9ade99;
+	padding: 3px 10px;
+	border-radius: 10px;
+	margin: 0px 3px 5px;
+}
+
+#enterNumber{
+	margin-right: 50px;
+}
