@@ -1,6 +1,6 @@
+$('.newContact').addClass('d-none');
+$('#number-list').addClass('d-none');
 $(function() {
-	$('.newContact').addClass('d-none');
-	$('#number-list').addClass('d-none');
 
 	$('.contact')[0].classList.add('active');
 	$('.addNewContact').on('click',function(e) {
@@ -60,11 +60,14 @@ $(function() {
 			{nama : 'Teggar', no_telp : '081287654321'}
 		]
 		let html 		= ``;
-		for (var i = 0; i < data.length; i++) {
-			html 		+= `<li class="d-block text-dark" data-value="${data[i].no_telp}">
-								${data[i].no_telp}
-								<small class="d-block">${data[i].nama}</small>
-							</li>`;
+		let val 		= $(this).val().toLowerCase();
+		for (let i = 0; i < data.length; i++) {
+			if (data[i].nama.toLowerCase().match(val) || data[i].no_telp.match(val)) {
+				html 		+= `<li class="d-block text-dark" data-value="${data[i].no_telp}">
+									${data[i].no_telp}
+									<small class="d-block">${data[i].nama}</small>
+								</li>`;
+			}
 		}
 		if (data.length == 0) {
 			let html 	= '<span class="text-center">Data Tidak Ditemukan</span>';
